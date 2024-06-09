@@ -1,5 +1,21 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+}
+
+* {
+  font-family: "Rubik";
+}
+
 body {
   margin: 0;
-  background-image: url("pattern-background-mobile-light.svg");
+  background-image: url("../assets/images/pattern-background-mobile-light.svg");
   background-repeat: no-repeat;
+  background-color: #f4f6fa;
 }
