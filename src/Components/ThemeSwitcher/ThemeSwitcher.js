@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Sun } from "../../../assets/images/icon-sun-dark.svg";
-import { ReactComponent as Moon } from "../../../assets/images/icon-moon-dark.svg";
+import { ReactComponent as Sun } from "../../assets/images/icon-sun-dark.svg";
+import { ReactComponent as Moon } from "../../assets/images/icon-moon-dark.svg";
 import styles from "./ThemeSwitcher.module.css";
 
 const ThemeSwitcher = () => {

@@ -3,6 +3,7 @@ h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   color: #313e51;
+  margin: 32px 0 0 0;
 }
 
 span {
@@ -15,19 +16,8 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
-}
-
-li {
-  list-style-type: none;
-  width: 327px;
-  height: 64px;
-  background-color: white;
-  margin-bottom: 12px;
-  border-radius: 12px;
-}
-
-ul {
-  padding: 0;
+  margin-bottom: 40px;
+  margin-top: 16px;
 }
 
 a {
@@ -35,4 +25,9 @@ a {
   font-size: 18px;
   font-weight: 500;
   color: #313e51;
+  margin-left: 16px;
+}
+
+header {
+  margin-left: 24px;
 }

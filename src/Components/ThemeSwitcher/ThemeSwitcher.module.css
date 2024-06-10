@@ -3,6 +3,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 24px;
 }
 
 .ThemeSwitcher_label {
@@ -40,27 +41,4 @@
 }
 .ThemeSwitcher_label:active:after {
   width: 30px;
-}
-
-.ThemeSwitcher_label svg {
-  position: absolute;
-  width: 20px;
-  top: 5px;
-  z-index: 100;
-}
-.ThemeSwitcher_label svg.sun {
-  left: 5px;
-  fill: #fff;
-  transition: 0.3s;
-}
-.ThemeSwitcher_label svg.moon {
-  left: 40px;
-  fill: #7e7e7e;
-  transition: 0.3s;
-}
-.ThemeSwitcher_input:checked + .ThemeSwitcher_label svg.sun {
-  fill: #7e7e7e;
-}
-.ThemeSwitcher_input:checked + .ThemeSwitcher_label svg.moon {
-  fill: #fff;
 }
