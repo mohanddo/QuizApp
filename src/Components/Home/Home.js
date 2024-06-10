@@ -8,12 +8,10 @@ import "./Home.module.css";
 function Home() {
   return (
     <>
-      <header>
-        <h1>
-          Welcome to the <span>Frontend Quiz!</span>
-        </h1>
-        <h3>Pick a subject to get started</h3>
-      </header>
+      <h1>
+        Welcome to the <span>Frontend Quiz!</span>
+      </h1>
+      <h3>Pick a subject to get started</h3>
 
       <nav>
         <ul>

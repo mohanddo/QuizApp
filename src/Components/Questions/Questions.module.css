@@ -1,0 +1,58 @@
+h2 + p {
+  color: #626c7f;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+p + p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #313e51;
+}
+
+.barContainer {
+  height: 16px;
+  width: 327px;
+  background-color: white;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 12px;
+}
+
+.option {
+  background-color: white;
+  color: #313e51;
+  height: 64px;
+}
+
+.SubmitandNextButton {
+  background-color: #a729f5;
+  color: white;
+  height: 56px;
+  justify-content: center;
+}
+
+.SubmitandNextButton,
+.option {
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  width: 327px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f4f6fa;
+  border-radius: 5px;
+  margin-right: 16px;
+  margin-left: 12px;
+}
