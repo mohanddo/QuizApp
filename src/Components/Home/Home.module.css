@@ -1,4 +1,4 @@
-h1 {
+.WelcomeHeader {
   font-size: 40px;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
@@ -7,8 +7,7 @@ h1 {
   margin-left: 24px;
 }
 
-span {
-  display: "block";
+.h1span {
   font-weight: 500;
 }
 

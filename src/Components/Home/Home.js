@@ -3,13 +3,13 @@ import { ReactComponent as HtmlIcon } from "../../assets/images/icon-html.svg";
 import { ReactComponent as JsIcon } from "../../assets/images/icon-js.svg";
 import { ReactComponent as CssIcon } from "../../assets/images/icon-css.svg";
 import { Link } from "react-router-dom";
-import "./Home.module.css";
+import styles from "./Home.module.css";
 
 function Home() {
   return (
     <>
-      <h1>
-        Welcome to the <span>Frontend Quiz!</span>
+      <h1 className={styles.WelcomeHeader}>
+        Welcome to the <span className={styles.h1span}>Frontend Quiz!</span>
       </h1>
       <h3>Pick a subject to get started</h3>
 

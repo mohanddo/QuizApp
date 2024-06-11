@@ -1,11 +1,10 @@
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import data from "./data.json";
 import { useState } from "react";
 import styles from "./Questions.module.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-function Questions() {
-  const { subject } = useParams();
+function Questions({ subject }) {
   const [index, setIndex] = useState(0);
   const [answerState, setAnswerState] = useState("Unselected");
   const [score, setScore] = useState(0);
@@ -19,6 +18,7 @@ function Questions() {
 
   function handleClick(option) {
     answer = option;
+    // const optionButtons = document.querySelectorAll(`.${styles.option}`);
   }
 
   function handleSubmit() {
@@ -37,15 +37,14 @@ function Questions() {
 
   return (
     <>
-      <h2>{quiz.title}</h2>
-
       <p>{`Question ${index + 1} of ${quiz.questions.length}`}</p>
       <p>{question.question}</p>
 
       <ProgressBar
         barContainerClassName={styles.barContainer}
         height="8px"
-        completed={60}
+        completed={score}
+        maxCompleted={quiz.questions.length}
         bgColor="#A729F5"
         isLabelVisible={false}
       />
@@ -60,14 +59,14 @@ function Questions() {
                 handleClick(option);
               }}
             >
-              <span>A</span>
+              <span className={styles.letter}>A</span>
               {option}
             </button>
           );
         })}
 
         {quiz_end ? (
-          <Link to={"/"}>See Result</Link>
+          <Link to={"/Score"}>See Result</Link>
         ) : (
           <button
             className={styles.SubmitandNextButton}

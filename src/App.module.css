@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  height: 18px;
+}
+
+.SubjectHeader {
+  font-weight: 500;
+  font-size: 18px;
+  color: #313e51;
+  margin: 0;
+}
